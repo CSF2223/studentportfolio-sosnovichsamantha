@@ -10,7 +10,7 @@ white: #fff
 black: #000  
 */
 
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Open+Sans:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Open+Sans:wght@300;400;600;700&display=swap');
 
 .navbar {
@@ -36,7 +36,8 @@ black: #000
 .navbar-links li {
     list-style: none;
     padding: 1rem;
-    font-size: 1.2rem;
+    
+     font-size: 1.2rem;
 }
 
 .navbar-links li a {
@@ -49,3 +50,54 @@ black: #000
 .navbar-links li:hover {
     background-color: #361356;
 }
+
+.toggle-button {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+
+@media (max-width: 800px) {
+    .toggle-button {
+        display: flex;
+    }
+
+.navbar-links {
+    display: none;
+    width: 100%;
+}
+
+.navbar {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.navbar-links ul {
+    width: 100%;
+    flex-direction: column;
+}
+
+.navbar-links li {
+    text-align: center;
+}
+
+.navbar-links.active {
+    display: flex;
+}
+}
+
+
+
