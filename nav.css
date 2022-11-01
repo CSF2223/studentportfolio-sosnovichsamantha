@@ -36,8 +36,7 @@ black: #000
 .navbar-links li {
     list-style: none;
     padding: 1rem;
-    
-     font-size: 1.2rem;
+    font-size: 1.2rem;
 }
 
 .navbar-links li a {
@@ -70,6 +69,7 @@ black: #000
 }
 
 
+
 @media (max-width: 800px) {
     .toggle-button {
         display: flex;
@@ -89,15 +89,4 @@ black: #000
     width: 100%;
     flex-direction: column;
 }
-
-.navbar-links li {
-    text-align: center;
 }
-
-.navbar-links.active {
-    display: flex;
-}
-}
-
-
-
