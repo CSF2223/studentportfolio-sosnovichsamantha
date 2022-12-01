@@ -81,11 +81,16 @@ black: #000
     font-size: 0.9rem;
     padding: 0 0.5rem;
 }
+
 .bottomNav li a {
     text-decoration: none;
     color: #c5b358;
     display: block;
 }
+
+
+
+
 
 @media (max-width: 800px) {
     .toggle-button {
@@ -105,5 +110,13 @@ black: #000
 .navbar-links ul {
     width: 100%;
     flex-direction: column;
+}
+
+.navbar-links li {
+    text-align: center;
+}
+
+.navbar-links.active {
+    display: flex;
 }
 }
